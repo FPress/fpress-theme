@@ -3,7 +3,7 @@
 @import 'home-featured';
 @import 'home-posts';
 @import 'sidebar';
-
+@import 'navbar';
 
 body,
 html {
@@ -13,13 +13,13 @@ html {
 }
 
 h1 {
-	font-size: 36pt;
-}
-h2 {
 	font-size: 24pt;
 }
-h3 {
+h2 {
 	font-size: 18pt;
+}
+h3 {
+	font-size: 14pt;
 	color: $primary-color;
 	margin: 0;
 }
