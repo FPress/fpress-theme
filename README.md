@@ -17,7 +17,7 @@ Visando a melhor funcionalidade do website, utilizaremos de recursos que viabili
 * [WordPress](https://wordpress.org) - Automação do sistema de publicação de artigos, total funcionalidade e customização para autores e administradores, maior segurança.
 * [Git](https://git-scm.com) / [GitHub](https://github.com/) - Controle de versões e fluidez no desenvolvimento colaborativo
 * [SASS](http://sass-lang.com) - Maior fluidez no desenvolvimento de estilos e editabilidade posterior.
-* [Bootstrap](https://getbootstrap.com) - Mais fluída responsividade do site em diferentes aparelhos e tamanhos de tela. Primariamente substituído pelo uso de CSS Grid e Flexboxes como padrão para o desenvolvimento do layout.
+* ~[Bootstrap](https://getbootstrap.com) - Mais fluída responsividade do site em diferentes aparelhos e tamanhos de tela.~ Primariamente substituído pelo uso de **CSS Grid** e **Flexboxes** como padrão para o desenvolvimento do layout.
 * [jQuery](https://jquery.com)
 Entre outros.
 
