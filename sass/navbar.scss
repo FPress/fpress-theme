@@ -1,1 +1,64 @@
 @import 'variables'; //Variáveis gerais
+
+//----HEADER----//
+.header-container {
+   border-top: 5px solid hsl(356, 100%, 35%);
+	@include side-padding(20px,10px);
+   position: relative;
+   background-color: white;
+}
+.header {
+   position: relative;
+   height: auto;
+	max-width: $max-width;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+}
+.header-description {
+	position: relative;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+//--------//
+
+
+.navbar {
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   ul {
+      padding: 0;
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      //
+      li {
+         list-style: none;
+         font-size: 20px;
+
+         margin: 3px 30px;
+         padding: 3px;
+
+         background-color: $semi-white1;
+         //transition: 0.1s;
+
+         &:hover {
+            transform: translateY(-1px);
+         }
+      }
+   }
+}
+
+
+.brand { //FPress logo = 50x11 aspect ratio
+
+   img {
+      $brand-size: 4;
+      width: 50px*$brand-size;
+      height: 11px*$brand-size;
+   }
+}

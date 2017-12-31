@@ -5,7 +5,7 @@
 		<title>Lab</title>
 		<meta charset="UTF-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
@@ -15,10 +15,32 @@
 	<body>
 
 		<div class="header-container large-shadow">
+
 			<div class="header">
-					<img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg">
+				<nav class="navbar">
+					<span class="brand">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg">
+
+					</span>
+
+					<ul class="menu demo">
+						<li><a href="#">Notícias</a></li>
+					  <li><a href="#">Multimídia</a></li>
+					  <li><a href="#">Arte</a></li>
+					  <li><a href="#">Esportes</a></li>
+					  <li><a href="#">Humor</a></li>
+					  <li><a href="#">Discussão</a></li>
+					  <li><a href="#">Sobre</a></li>
+					</ul>
+				</nav>
+					<!--<img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg">-->
 			</div>
 		</div>
+
+
+
+
+
 
 		<?php /* wp_nav_menu( array(
 			'theme_location'  => 'primary',
