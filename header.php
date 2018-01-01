@@ -19,20 +19,26 @@
 			<div class="header">
 				<nav class="navbar">
 					<span class="brand">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg">
-
+						<img src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg" height="50px">
+						<p class="brand-description"><?php echo get_bloginfo('description'); ?></p>
 					</span>
 
-					<ul class="menu demo">
-						<li><a href="#">Notícias</a></li>
-					  <li><a href="#">Multimídia</a></li>
-					  <li><a href="#">Arte</a></li>
-					  <li><a href="#">Esportes</a></li>
-					  <li><a href="#">Humor</a></li>
-					  <li><a href="#">Discussão</a></li>
-					  <li><a href="#">Sobre</a></li>
+					<ul>
+						<li><a href="#" class="current">Notícias</a></li>
+						<li><a href="#">Multimídia</a></li>
+						<li><a href="#">Arte</a></li>
+						<li><a href="#">Esportes</a></li>
+						<li><a href="#">Humor</a></li>
+						<li><a href="#">Discussão</a></li>
+						<li><a href="#">Sobre</a></li>
 					</ul>
 				</nav>
+				<div class="responsive-bar">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg" height="40px">
+
+					<i class="fa fa-2x fa-bars menu" aria-hidden="true"></i>
+				</div>
 					<!--<img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg">-->
 			</div>
 		</div>

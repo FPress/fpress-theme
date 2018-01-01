@@ -1,0 +1,28 @@
+/* Telefones em landscape e abaixo */
+/* Telefone em landscape a tablet em portrait */
+/* tablet em portrait a landscape e desktop */
+/* // */
+.header-container { border-top: 5px solid #b3000c; padding-right: 20px; padding-left: 20px; position: relative; background-color: white; }
+@media (max-width: 767px) { .header-container { padding-right: 10px; padding-left: 10px; } }
+
+.header { position: relative; height: auto; max-width: 1200px; padding: 10px 0; margin: 0 auto; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.header-description { position: relative; margin: 0; font-family: 'Source Sans Pro', sans-serif; }
+
+.navbar { -webkit-box-sizing: border-box; box-sizing: border-box; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.navbar ul { padding: 0; margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.navbar ul li { text-align: center; list-style: none; font-size: 20px; color: #555; }
+.navbar ul li a { -webkit-box-sizing: border-box; box-sizing: border-box; display: block; padding: 3px 20px; margin: 0 3px; -webkit-transition: 0.2s; transition: 0.2s; height: 100%; }
+.navbar ul li a:hover, .navbar ul li a:active, .navbar ul li a.current { color: #b3000c; -webkit-box-shadow: 0 2px 0 #b3000c; box-shadow: 0 2px 0 #b3000c; }
+
+.responsive-bar { -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+@media (min-width: 900px) { .navbar { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .navbar .brand { display: inline-block; }
+  .navbar ul { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+  .responsive-bar { display: none; } }
+.brand { display: none; margin: 10px 0; }
+
+.brand-description { margin: 0; font-size: 13px; }
+
+/*# sourceMappingURL=navbar.css.map */

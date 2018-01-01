@@ -2,7 +2,7 @@
 
 //----HEADER----//
 .header-container {
-   border-top: 5px solid hsl(356, 100%, 35%);
+   border-top: 5px solid $red;
 	@include side-padding(20px,10px);
    position: relative;
    background-color: white;
@@ -10,7 +10,9 @@
 .header {
    position: relative;
    height: auto;
-	max-width: $max-width;
+   max-width: $max-width;
+   padding: 10px 0;
+
 	margin: 0 auto;
 
 	box-sizing: border-box;
@@ -25,40 +27,74 @@
 
 .navbar {
    box-sizing: border-box;
-   display: flex;
+   display: none;
    align-items: center;
    justify-content: space-between;
+   flex-wrap: wrap;
 
    ul {
       padding: 0;
+      margin: 0;
 
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      //
+
+      //flex-direction: column;
       li {
+         text-align: center;
          list-style: none;
          font-size: 20px;
+         color: #555;
 
-         margin: 3px 30px;
-         padding: 3px;
 
-         background-color: $semi-white1;
-         //transition: 0.1s;
+         a {
+            box-sizing: border-box;
+            display: block;
+            padding: 3px 20px;
+            margin: 0 3px;
+            transition: 0.2s;
+            height: 100%;
 
-         &:hover {
-            transform: translateY(-1px);
+            &:hover, &:active, &.current {
+               //transform: translateY(-1px);
+               //background-color: $semi-white1;
+               color: $red;
+               box-shadow: 0 2px 0 $red;
+            }
          }
       }
    }
 }
 
+.responsive-bar {
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+@media (min-width: 900px){
+   .navbar {
+      display: flex;
+      .brand {
+         display: inline-block;
+      }
+      ul {
+         flex-direction: row;
+      }
+   }
+   .responsive-bar {
+      display: none;
+   }
+}
 
 .brand { //FPress logo = 50x11 aspect ratio
-
-   img {
-      $brand-size: 4;
-      width: 50px*$brand-size;
-      height: 11px*$brand-size;
-   }
+   display: none;
+   margin: 10px 0;
+}
+.brand-description {
+   margin: 0;
+   font-size: 13px;
 }
