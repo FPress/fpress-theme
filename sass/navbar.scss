@@ -3,7 +3,6 @@
 //----HEADER----//
 .header-container {
    border-top: 5px solid $red;
-	@include side-padding(20px,10px);
    position: relative;
    background-color: white;
 }
@@ -31,43 +30,50 @@
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
+   background-color: $semi-white1;
 
    ul {
       padding: 0;
-      margin: 0;
+      margin: 0 0 10px 0;
+      padding-bottom: 2px;
 
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
 
-      //flex-direction: column;
+      flex-direction: column;
       li {
-         text-align: center;
          list-style: none;
          font-size: 20px;
          color: #555;
 
+         margin: 2px 5px;
+         background-color: white;
 
          a {
             box-sizing: border-box;
             display: block;
-            padding: 3px 20px;
-            margin: 0 3px;
+
+            padding: 5px 5px 10px 20px;
+
             transition: 0.2s;
             height: 100%;
 
-            &:hover, &:active, &.current {
-               //transform: translateY(-1px);
-               //background-color: $semi-white1;
+            &:hover,
+            &:active {
                color: $red;
-               box-shadow: 0 2px 0 $red;
+               border-left: 5px solid $red;
             }
+         }
+         &.current-menu-item {
+            border-left: 5px solid $red;
          }
       }
    }
 }
 
 .responsive-bar {
+   @include side-padding(20px,10px);
    box-sizing: border-box;
    display: flex;
    align-items: center;
@@ -75,19 +81,45 @@
 }
 
 
-@media (min-width: 900px){
+@media (min-width: 900px){ //Desktop
+
    .navbar {
+      @include side-padding(20px,10px);
       display: flex;
+      background-color: rgba(0,0,0,0);
+
       .brand {
          display: inline-block;
       }
       ul {
          flex-direction: row;
+         margin: 0;
+
+         li {
+            text-align: center;
+
+            a {
+               padding: 5px 10px;
+               &:hover,
+               &:active {
+                  border: none;
+                  box-shadow: 0 2px 0 $red;
+                  background-color: none;
+               }
+            }
+            &.current-menu-item {
+               border: none;
+               box-shadow: 0 2px 0 $red;
+               background-color: none;
+            }
+         }
       }
    }
+
    .responsive-bar {
       display: none;
    }
+
 }
 
 .brand { //FPress logo = 50x11 aspect ratio
@@ -95,6 +127,7 @@
    margin: 10px 0;
 }
 .brand-description {
+   color: #555;
    margin: 0;
-   font-size: 13px;
+   font-size: 14px;
 }
