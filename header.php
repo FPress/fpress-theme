@@ -58,7 +58,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg" height="40px">
 					</a>
 
-					<i class="fa fa-2x fa-bars menu" aria-hidden="true"></i>
+					<i id="navToggle" class="fa fa-2x fa-bars" aria-hidden="true"></i>
 				</div>
 					<!--<img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/fpress-logo.svg">-->
 			</div>
