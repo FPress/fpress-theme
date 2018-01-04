@@ -3,23 +3,25 @@
 @import 'home-featured';
 @import 'home-posts';
 @import 'sidebar';
-
+@import 'navbar';
 
 body,
 html {
 	margin: 0;
 	padding: 0;
 	color: $semi-black;
+
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
-	font-size: 36pt;
-}
-h2 {
 	font-size: 24pt;
 }
-h3 {
+h2 {
 	font-size: 18pt;
+}
+h3 {
+	font-size: 14pt;
 	color: $primary-color;
 	margin: 0;
 }
@@ -79,36 +81,6 @@ hr {
 	}
 }
 
-//----HEADER----//
-.header-container {
-	width: 100%;
-	height: 100px;
-	@include side-padding(20px,10px);
-
-	background-color: white;
-
-	position:relative;
-	box-sizing: border-box;
-}
-.header {
-	height: 100%;
-	display: flex;
-	max-width: $max-width;
-	margin: 0 auto 0 auto;
-
-	padding-top: 15px;
-	padding-bottom: 15px;
-	box-sizing: border-box;
-}
-.header-logo {
-	height: 100%;
-}
-.header-description {
-	position: relative;
-	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-//--------//
 
 footer {
 	box-sizing: border-box;
