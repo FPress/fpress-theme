@@ -3,9 +3,8 @@
 
 
 .feat-container {
-	display: flex;
 	max-width: $max-width;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 
 	font-family: 'Source Sans Pro', sans-serif;
 
@@ -27,38 +26,11 @@
 	margin-top: 0;
 }
 
-.feat-second-container {
-	display: flex;
-  flex-direction: column;
-  flex: 10;
-}
-.feat-container,
-.feat-second-container {
-	@media (max-width: $break-max-sm) {
-		display: inherit;
-	}
-}
-
 .feat-first {
 	min-height: $min-height;
-  	flex: 13;
-	@media (min-width: $break-max-sm) {
-		margin-right: 10px;
-	}
 }
-
 .feat-second {
 	min-height: ($min-height - 10)/2;
-	margin-bottom: 10px;
-	flex: 1;
-
-	&:nth-child(1) {
-		background-image: url('../img/gincana-min.jpg');
-	}
-	&:nth-child(2) {
-		background-image: url('../img/zoologico2-min.jpg');
-		margin-bottom: 0;
-	}
 }
 
 .feat-first,
@@ -66,6 +38,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	margin-bottom: 10px;
 
 	background-color: $primary-color;
 	background-repeat: no-repeat;
@@ -86,7 +60,7 @@
 
 
 .feat-content {
-	margin: auto 10px 10px 30px;
+	margin: auto 10px 10px 10px;
 	font-size: 15px;
 
 	.data {
@@ -94,27 +68,10 @@
 	}
 }
 .feat-category {
-	margin: 20px 10px 0 30px;
+	margin: 20px 10px 0 10px;
 
 	.categorias {
 		margin-bottom: 50px;
-	}
-}
-
-
-/* Telefones em landscape e abaixo */
-@media (max-width: 480px) {
-	.feat-first {
-		min-height: 300px;
-	}
-
-	.feat-content, .feat-category { margin-left: 10px }
-
-	h1 {
-		font-size: 24pt;
-	}
-	h2 {
-		font-size: 18pt;
 	}
 }
 
