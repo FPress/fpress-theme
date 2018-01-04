@@ -38,7 +38,7 @@ function fpress_theme_setup() {
 		add_theme_support('menus'); //suporte de menus (ex.: navbar)
 		add_theme_support( 'post-thumbnails' );
 
-		register_nav_menu('primary','Navegação Primária do Cabeçário');
+		register_nav_menu('navbar','Navegação Primária do Cabeçário');
 		register_nav_menu('footer1','Navegação #1 do Footer');
 	}
 add_action('after_setup_theme', 'fpress_theme_setup');
