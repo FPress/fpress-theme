@@ -1,7 +1,7 @@
 # FPress Theme
-Tema oficial do Jornal Fernando Press
+Tema WordPress oficial do Jornal Fernando Press
 
-* [Última versão de desenvolvimento online](http://box.gearcreations.com/open/fpress/) (box.gearcreations.com)
+* [Última versão de desenvolvimento online](http://box.gearcreations.com/open/fpress/) (The Box)
 
 
 ## Estrutura do projeto
