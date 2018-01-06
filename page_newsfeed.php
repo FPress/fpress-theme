@@ -1,7 +1,18 @@
+<?php /* Template Name: Feed de Notícias */ ?>
+
 <?php get_header(); ?>
 
 
-		<div class="section-a large-shadow"></div>
+		<div class="section-a large-shadow">
+				<?php
+				if (have_posts()  &&  '' !== get_post()->post_content):
+					while (have_posts()) : the_post();
+						echo '<center style="padding: 1px">';
+						the_content();
+						echo "</center>";
+					endwhile;
+				endif; ?>
+		</div>
 
 		<div class="section-b">
 			<div class="post-feed-container">

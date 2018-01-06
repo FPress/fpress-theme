@@ -16,6 +16,6 @@
 .post-content .data { margin-bottom: 0; }
 @media (min-width: 480px) { .post-content { margin-left: 15px; } }
 
-.post-featured-image { background-repeat: no-repeat; background-size: cover; background-position: center; background-image: url("https://www.etecfernandoprestes.com.br/Uploads/Images/News/63/926-thumb.jpg"); }
+.post-featured-image { background-repeat: no-repeat; background-size: cover; background-position: center; }
 
 /*# sourceMappingURL=home-posts.css.map */

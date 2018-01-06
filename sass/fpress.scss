@@ -1,7 +1,9 @@
 @import 'variables'; //Variáveis gerais
 
+body.home {
+	@import 'home-posts';
+}
 @import 'home-featured';
-@import 'home-posts';
 @import 'sidebar';
 @import 'navbar';
 
